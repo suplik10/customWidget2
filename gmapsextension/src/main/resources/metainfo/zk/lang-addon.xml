@@ -1,0 +1,33 @@
+<language-addon>
+    <addon-name>gmapsextension</addon-name>
+  	<version>
+		<version-class>eu.safetyfirst.gmapsextension.Version</version-class>
+		<version-uid>0.0.1-SNAPSHOT</version-uid>
+		<zk-version>7.0.2</zk-version><!-- or later -->
+	</version>
+    
+	<language-name>xul/html</language-name>
+	<component>
+		<component-name>sfmapcontrol</component-name> <!-- required -->
+		<component-class>eu.safetyfirst.gmapsextension.SFMapControl</component-class> <!-- required -->
+		<widget-class>gmapsextension.SFMapControl</widget-class> <!-- required -->
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/sfmapcontrol.js</mold-uri>
+
+			<!--
+			== Tip in advance ==
+				You don't have to specify a css.dsp if you need not ,
+				but usually you need it.
+
+				You could assign a .css file ,too.
+
+				The css.dsp is almost as same as CSS file ,
+				but have more powerful enhancement.	(like EL support.)
+			====
+			<css-uri>css/sfmapcontrol.css.dsp</css-uri>
+			-->
+			
+		</mold>
+	</component>
+</language-addon>

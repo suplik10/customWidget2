@@ -1,0 +1,17 @@
+<zk xmlns:w="client">
+	<window id="organizationUnitEditDialog"
+		apply="test.ctrl.SFTestController">
+		<button label="bound animation marker" id="addMyGmarker"></button>
+		<button label="stop animation" id="stopBound"></button>
+		<button label="drop animation marker" id="dropAnimationButt"></button>
+		<button label="drop animation marker" id="dropAnimationButt2"></button>
+		<button label="remove street view" id="streetButt"></button>
+		<button label="remove POI" id="poiButt"></button>
+		<button label="cross cursor" id="crossButt"></button>
+		<button label="add KML" id="kmlButt"></button>
+		<button label="remove KML" id="kmlRemButt"></button>
+		<button label="add png map" id="pngButt"></button>
+		<button label="remove png map" id="pngRemButt"></button>
+		<gmaps id="gmaps" width="1200px" height="600px" />
+	</window>
+</zk>
