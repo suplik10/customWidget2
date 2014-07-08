@@ -13,5 +13,6 @@
 		<button label="add png map" id="pngButt"></button>
 		<button label="remove png map" id="pngRemButt"></button>
 		<gmaps id="gmaps" width="1200px" height="600px" />
+		<sfmapcontrol id="mapControl" onCreate='self.setMap(gmaps);'/>
 	</window>
 </zk>

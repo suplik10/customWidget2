@@ -28,7 +28,7 @@ public class SFTestController extends  SelectorComposer<Component>{
 	Gmarker gm3;
 	Gmarker gm4;
 	
-	
+	@Wire
 	SFMapControl mapControl;
 
 	@Wire
@@ -65,13 +65,13 @@ public class SFTestController extends  SelectorComposer<Component>{
         super.doAfterCompose(component);
         
         // Init my SFMapControl component
-        this.mapControl = new SFMapControl(this.gmaps);
+        //this.mapControl.setMap(this.gmaps);
         this.gmaps.setCenter(50.246705, 15.839178);  
         
         //THIS DOESNT WORK !!!! BUT FOR EXAMPLE ON LINE 128 THE SAME METOD WORKS, AFTER CLICK ON BUTTON :(
-        this.mapControl.setStreetViewControll(false);
-        this.mapControl.setCrossCursor(true);
-        this.mapControl.setPOI(!this.mapControl.isPOI());
+       // this.mapControl.setStreetViewControll(false);
+        //this.mapControl.setCrossCursor(true);
+        this.mapControl.setPOI(false);
     
 	}
 	

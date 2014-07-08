@@ -235,7 +235,7 @@ gmapsextension.SFMapControl = zk
 									visibility : "off"
 								} ]
 								} ];
-							//this.setPOI(this._POI, {force:true});
+							this.setPOI(this._POI, {force:true});
 //							map.setOptions({
 //									streetViewControl : false,
 //									styles: myStyles

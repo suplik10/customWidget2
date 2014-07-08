@@ -154,13 +154,11 @@ public class SFMapControl extends XulElement {
 	protected void renderProperties(org.zkoss.zk.ui.sys.ContentRenderer renderer)
 			throws java.io.IOException {
 		super.renderProperties(renderer);
-		
-//		if (!_POI)
-//			render(renderer, "POI", false);
-//		if (!_POI)
-//		renderer.render("POI", isPOI());
 		if (_mapId != null)
 			render(renderer, "mapId", _mapId);
+		
+		if (!_POI)
+			renderer.render("POI", isPOI());
 	}
 
 	public void service(AuRequest request, boolean everError) {
