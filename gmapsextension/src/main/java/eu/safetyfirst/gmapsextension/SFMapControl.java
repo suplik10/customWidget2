@@ -155,7 +155,7 @@ public class SFMapControl extends XulElement {
 			throws java.io.IOException {
 		super.renderProperties(renderer);
 		if (_mapId != null)
-			render(renderer, "mapId", _mapId);
+			render(renderer, "mapId", _mapId);  
 		
 		if (!_POI)
 			renderer.render("POI", isPOI());
