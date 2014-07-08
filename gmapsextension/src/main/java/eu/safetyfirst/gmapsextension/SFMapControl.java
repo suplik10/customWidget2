@@ -73,7 +73,7 @@ public class SFMapControl extends XulElement {
 	}
 
 	public void setPOI(boolean POI) {
-		smartUpdate("POI", POI, true);
+		smartUpdate("POI", POI);
 		this._POI = POI;
 	}
 
@@ -158,7 +158,10 @@ public class SFMapControl extends XulElement {
 			render(renderer, "mapId", _mapId);  
 		
 		if (!_POI)
-			renderer.render("POI", isPOI());
+			render(renderer, "POI", isPOI());  
+		
+		//if (!_POI)
+		//	renderer.render("POI", isPOI());
 	}
 
 	public void service(AuRequest request, boolean everError) {
